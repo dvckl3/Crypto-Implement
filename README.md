@@ -1,2 +1,2 @@
-# Crypto-Implement
-implement some cryptography stuff
+# Crypto Implement
+Cài đặt một số thuật toán và attacks Crypto/CTF
