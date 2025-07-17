@@ -9,7 +9,7 @@ def flatter(M):
     return matrix(M.nrows(), M.ncols(), list(map(int, re.findall(b"-?\\d+", ret))))
 def Babai_CVP(mat,target):
     M = flatter(mat)
-    G = M.gram_schidt()[0]
+    G = M.gram_schmidt()[0]
     diff = target 
     for i in reversed(range(G.nrows())):
         diff -= M[i] * ((diff*G[i]) / (G[i]*G[i])).round()
